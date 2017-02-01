@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="demo">
+	<head>
+		<title>Weather App</title>
+		
+		<script src="angular.min.js"></script>
+    	<script src="script.js"></script>
+	</head>
+
+	<body>
+		<div ng-controller="Hello">
+			
+			
+			<p> city name {{greeting.query.results.channel.location.city}} , {{greeting.query.results.channel.location.region}}</p> 
+			
+			<p> current tempratur {{greeting.query.results.channel.item.condition.temp}} , {{greeting.query.results.channel.item.condition.text}}</p> 
+			                                                        
+			
+
+			
+		</div>
+	</body>
+</html>
